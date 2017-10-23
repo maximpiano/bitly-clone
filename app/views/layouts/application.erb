@@ -1,8 +1,38 @@
+<!DOCTYPE html>
+
 <html>
 	<head>
-		<title>Sinatra Framework</title>
+		<title>Bitly</title>
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/application.css/?v=2.2">
+		
+		 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script> -->
+
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/application.js/?v=2.2"></script>
+		
+		
 	</head>
+
 	<body>
-		<%= yield %>
+		<div class ="drop">
+			<h1 class = "logo"><a href="/" id="a">BITLY</a></h1>
+			<ul class = "button">
+			<li class ="test"><a href="/" id="a">Contact</li>
+			<li class ="test"><a href="https://bitly.com/pages/about" id="a">ABOUT</a></li>
+			</ul>
+
+
+			<div class = "title"> 
+				<h1> THE LINK KNOWS ALL. SO CAN YOU.</h1> 
+				<h2> Measure your links with Bitly the world's leading link management platform.</h2>
+
+				<%= yield %>
+
+				<%= @message if @message %>
+		</div>
+		</div>
 	</body>
 </html>

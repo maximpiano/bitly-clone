@@ -1,2 +1,21 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+
+<form action='/urls' method='post' class="form"> 
+<h2>Enter URL:</h2>
+<div class="inputWithIcon">
+<input type="text" name="long_url" placeholder="Type here">
+<i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+<input type="submit" value="Shorten Url">
+</form>
+
+
+
+<% if @url1 && @url1.short_url%>
+	<h3>Here is your URL</h3>
+	<p><a href="/<%= @url1.short_url%>">
+		bit.ly/<%= @url1.short_url %>
+	</a></p>
+<% end %>
+
+
+<div id="table"> </div>
+	
